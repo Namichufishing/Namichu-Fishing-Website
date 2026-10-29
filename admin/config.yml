@@ -1,0 +1,25 @@
+
+backend:
+  name: github
+  repo: Namichufishing/Namichu-Fishing-Website
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "gallery"
+    label: "Photo Gallery"
+    folder: "content/gallery"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Photo", name: "image", widget: "image" }
+
+  - name: "reels"
+    label: "Fishing Reels"
+    folder: "content/reels"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Video Link", name: "url", widget: "string" }
