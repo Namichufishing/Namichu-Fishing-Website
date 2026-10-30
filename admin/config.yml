@@ -27,3 +27,4 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Video Link", name: "url", widget: "string" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false }
